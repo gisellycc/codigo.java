@@ -317,7 +317,45 @@ public class PrimeiroPrograma {
         System.out.printf("Média dos valores: %.2f\n", media);
     }
 }
+ATIVIDADE JULIAN
+package primeiro;
+import java.util.Scanner;
 
+public class PrimeiroPrograma{
+    public static void main(String[]args){
+    Scanner teclado = new Scanner(System.in);
+    System.out.print("Digite um numero binario");
+    int binario = teclado.nextInt();
+    int original = binario;
+    
+    int decimal= 0;
+    int base =1;
+    
+    boolean valido = true;
+    
+    while (binario > 0){
+        int digito = binario % 10;
+        
+        if (digito != 0 && digito != 1){
+        valido = false;
+        break;
+        }
+     
+    
+    decimal += digito * base;
+    base *= 2;
+    binario /= 10;
+    }
+    
+    if (valido){
+        System.out.println(decimal);
+    }else{
+        System.out.print("numeros diferentes");
+    }
+    
+        
+    }    
+}
 
 
 
