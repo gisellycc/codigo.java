@@ -357,6 +357,31 @@ public class PrimeiroPrograma{
     }    
 }
 
+package primeiro;
+import java.util.Scanner;
 
+public class PrimeiroPrograma{
+    public static void main(String[]args){
+    Scanner teclado = new Scanner(System.in);
+    System.out.print("Digite um numero ");
+    
+    int num = teclado.nextInt();
+    int somadivi = 0;
+    
+    for(int i = 1; i < num; i++){
+        if (num % i == 0){
+            somadivi += i;    
+        }
+    }
+    
+    if (somadivi == num){
+        System.out.print("é perfeito");
+    }else {
+        System.out.print("não é perfeito");
+    }
+    
+        
+    }    
+}
 
 
